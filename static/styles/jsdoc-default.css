@@ -1,5 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,500i,500,600,600i|Roboto);
 
+.prev_next {
+  width: 100%;
+}
+
+.prev_button {
+  float:left;
+}
+
+.next_button {
+  float:right;
+}
+
 * {
   box-sizing: border-box
 }
@@ -537,6 +549,11 @@ dl.param-type {
   top: -.825rem;
 }
 
+.logo {
+  height: 140px;
+  margin-bottom: 30px;
+}
+
 /* navicon */
 .navicon {
   position: relative;
@@ -635,6 +652,10 @@ dl.param-type {
   border-bottom: 1px solid #eee;
 }
 
+nav {
+  background-color: #ddd;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 680px) {
   body {
     overflow-x: hidden;
@@ -690,3 +711,5 @@ dl.param-type {
     width: 100%;
   }
 }
+
+

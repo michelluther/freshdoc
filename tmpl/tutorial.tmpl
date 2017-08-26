@@ -1,17 +1,34 @@
 <section>
 
 <header>
+    
+</header>
+
+<article>
+    <?js= content ?>
+    <div class="tutorial_toc">
     <?js if (children.length > 0) { ?>
+    <h4>Content</h4>
     <ul><?js
         var self = this;
         children.forEach(function(t) { ?>
         <li><?js= self.tutoriallink(t.name) ?></li>
     <?js }); ?></ul>
-    <?js } ?>
-</header>
-
-<article>
-    <?js= content ?>
+    <?js } ?>	
+    </div>
 </article>
 
+<hr>
+	<div class="prev_next">
+		<div class="prev_button">
+	    <?js if(prev.name){ ?>
+		&lt; Previous: <?js= this.tutoriallink(prev.name) ?>
+		<?js } ?>
+		</div>
+		<div class="next_button">	
+		<?js if(next.name){ ?>
+		Next: <?js= this.tutoriallink(next.name) ?> &gt;
+		<?js } ?>
+		</div>
+	</div>
 </section>
