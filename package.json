@@ -1,6 +1,6 @@
 {
-  "name": "minami",
-  "version": "1.2.3",
+  "name": "freshdoc",
+  "version": "0.0.1",
   "description": "Clean and minimal JSDoc 3 Template / Theme",
   "main": "publish.js",
   "scripts": {
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nijikokun/minami.git"
+    "url": "https://github.com/michelluther/freshdoc.git"
   },
-  "author": "Nijiko Yonskai <nijikokun@gmail.com>",
+  "author": "Michel Luther <luther@lutherundwinter.de>",
   "licenses": [
     {
       "type": "Apache-2.0",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Nijikokun/minami/issues"
   },
-  "homepage": "https://github.com/Nijikokun/minami",
+  "homepage": "https://github.com/michelluther",
   "devDependencies": {
     "taffydb": "^2.7.3"
   }
