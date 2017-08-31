@@ -152,7 +152,7 @@ function addSignatureParams(f) {
     f.signature = util.format("%s(%s)", f.signature || "", params.join(", "))
 }
 
-function addSignatureReturns(f) {
+function addSignatureReturns(f) { 
     var attribs = []
     var attribsString = ""
     var returnTypes = []
@@ -714,13 +714,7 @@ exports.publish = function(taffyData, opts, tutorials) {
 
     generate(
         "",
-        (function(opts) { 
-          var returnString;
-          Object.getOwnPropertyNames(opts).forEach(function(item, index, value){
-            returnString += item+ ';';
-          }) ;
-          return returnString
-        })(opts),
+        opts.title,
         packages
         .concat([{
             kind: "mainpage",
